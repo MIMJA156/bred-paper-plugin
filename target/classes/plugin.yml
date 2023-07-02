@@ -1,0 +1,9 @@
+name: bred
+version: '1.0-SNAPSHOT'
+main: org.mimja156.bred.Bred
+api-version: '1.20'
+commands:
+  state:
+    description: Enable or Disable the Bred plugin!
+    usage: /<command> [enable | disable]
+    permission: ADMINISTRATOR
