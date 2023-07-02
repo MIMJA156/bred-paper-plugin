@@ -48,12 +48,12 @@ public class Commands implements CommandExecutor {
                     sender.sendMessage("Enabled!");
                 } else {
                     sender.sendMessage(String.format("§cInvalid state: \"%s\"§c\nPlease use either \"Enable\" or \"Disable\"", args[0]));
-                    player.playSound(player.getLocation(), Sound.ENTITY_CREEPER_PRIMED, 1.0f, 1.0f);
+//                    player.playSound(player.getLocation(), Sound.ENTITY_CREEPER_PRIMED, 1.0f, 1.0f);
                     return true;
                 }
             } else {
                 sender.sendMessage("§cInvalid syntax! Please see /help state§c");
-                player.playSound(player.getLocation(), Sound.ENTITY_CREEPER_PRIMED, 1.0f, 1.0f);
+//                player.playSound(player.getLocation(), Sound.ENTITY_CREEPER_PRIMED, 1.0f, 1.0f);
                 return true;
             }
         }
