@@ -1,5 +1,5 @@
 name: bred
-version: '1.0-SNAPSHOT'
+version: 'v1.0'
 main: org.mimja156.bred.Bred
 api-version: '1.20'
 commands:
