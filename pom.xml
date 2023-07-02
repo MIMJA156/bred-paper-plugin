@@ -6,7 +6,7 @@
 
     <groupId>org.mimja156</groupId>
     <artifactId>bred</artifactId>
-    <version>v1.1</version>
+    <version>v1.0</version>
     <packaging>jar</packaging>
 
     <name>bred</name>
