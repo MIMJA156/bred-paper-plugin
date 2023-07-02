@@ -1,5 +1,6 @@
 package org.mimja156.bred;
 import org.bukkit.NamespacedKey;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -29,6 +30,7 @@ public class Commands implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender,Command command,String label, String[] args){
         if (!(sender instanceof Player)) return true;
+        Player player = (Player) sender;
 
         if (command.getName().equalsIgnoreCase("state")) {
             if (args.length > 0){
@@ -46,10 +48,12 @@ public class Commands implements CommandExecutor {
                     sender.sendMessage("Enabled!");
                 } else {
                     sender.sendMessage(String.format("§cInvalid state: \"%s\"§c\nPlease use either \"Enable\" or \"Disable\"", args[0]));
+                    player.playSound(player.getLocation(), Sound.ENTITY_CAT_HISS, 1.0f, 1.0f);
                     return true;
                 }
             } else {
                 sender.sendMessage("§cInvalid syntax! Please see /help state§c");
+                player.playSound(player.getLocation(), Sound.ENTITY_CAT_HISS, 1.0f, 1.0f);
                 return true;
             }
         }
