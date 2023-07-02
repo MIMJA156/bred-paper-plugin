@@ -1,7 +1,7 @@
 
 # bred-paper-plugin
 
-This is a plugin for Paper, the Minecraft server software. It adds 4 new ways to craft bread and allows you to craft bread in the player crafter!
+This is a plugin for Paper, the Minecraft server software. It adds 12 new ways to craft bread and allows you to craft bread in the player crafter!
 
 ## The Recipes
 ### Crafting Table
